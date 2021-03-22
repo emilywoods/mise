@@ -1,8 +1,6 @@
 body,
 html {
-    width: 100%;
     height: 100%;
-    padding: 0px;
     margin: 0px;
 }
 body,
@@ -13,17 +11,17 @@ h4,
 h5,
 h6,
 p {
-    font-family: "Segoe UI",Arial,sans-serif;
+    font-family: Arial,sans-serif;
     font-weight: 400;
-    color: #2b4875; /* Navy */
+    color: #2b4875;
 }
 h3 {
     font-size: 24px;
 }
 
-/*landing-page*/
+/*intro*/
 
-.display-container {
+.intro {
     width: 100%;
     height: 100%;
     background-image: url("../images/snow.png");
@@ -46,11 +44,7 @@ h3 {
     /*text*/
     text-align: center;
     letter-spacing: 4px;
-    color: #2b4875 !important;
-}
-
-*, ::before, ::after {
-    box-sizing: inherit;
+    color: #2b4875;
 }
 
 .name {
@@ -67,18 +61,12 @@ h3 {
 .navbar {
     display: inline-block;
     width: auto;
-
-    color: #2b4875 !important;
-    background-color: #f1f1f1 !important;
-
-    overflow: hidden;
-
+    color: #2b4875;
+    background-color: #f1f1f1;
     position: absolute;
     left: 50%;
     transform: translate(-50%,0%);
-
     border-radius: 4px;
-
     bottom: 25%;
 }
 
@@ -108,7 +96,7 @@ h3 {
 }
 
 .button:hover {
-    background-color: #2b4875; /* Navy */
+    background-color: #2b4875;
     color: white;
 }
 
@@ -125,37 +113,25 @@ h3 {
 }
 
 .list-section ul {
-    text-align: left;
     height:auto;
     font-size: 18px;
 }
 
 .list-section ol {
-    text-align: left;
     height:auto;
     font-size: 18px;
 }
 
 .list-section li {
-    text-align: left;
     height:auto;
     max-width:90%;
     font-size: 18px;
     padding-left: 5%;
 }
 
-.list-section p {
-    height:auto;
-    max-width:90%;
-    padding: 0px 70px;
-    margin-left: 5px;
-    display: block;
-    font-size: 18px;
-}
-
 .list-section a {
     border-bottom: 1px dotted;
-    color: #2b4875; /* Navy */
+    color: #2b4875;
     text-decoration: none;
 }
 
