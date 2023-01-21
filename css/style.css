@@ -3,6 +3,9 @@ html {
     height: 100%;
     margin: 0px;
 }
+body {
+ background-color: #d4e4fe;
+}
 body,
 h1,
 h2,
@@ -33,22 +36,20 @@ h3 {
 
 .summary {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: 5%;
+    left: 10%;
 
     /*border*/
     padding: 12px 24px;
-    border: 1px solid #2b4875;
 
     /*text*/
-    text-align: center;
+    text-align: left;
     letter-spacing: 4px;
     color: #2b4875;
 }
 
 .name {
-    font-size: 48px !important;
+    font-size: 32px !important;
 }
 
 .hide-name {
@@ -59,15 +60,11 @@ h3 {
 /*navbar*/
 
 .navbar {
-    display: inline-block;
     width: auto;
     color: #2b4875;
-    background-color: #f1f1f1;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%,0%);
-    border-radius: 4px;
-    bottom: 25%;
+    left: 60%;
+    top: 10%;
 }
 
 .button {
@@ -76,22 +73,37 @@ h3 {
     padding: 10px 25px;
     vertical-align: middle;
     overflow: hidden;
-    text-decoration: none;
-    color: inherit;
+    text-decoration: underline dotted;
     background-color: inherit;
-    text-align: center;
     cursor: pointer;
     white-space: nowrap;
+
+     /*text*/
+    text-align: center;
+    letter-spacing: 4px;
+    color: #2b4875;
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar {
-        bottom: 2%;
+    .summary {
+        top: 5%;
+        left: 0%;
+        text-align: center;
     }
 
-    .button {
-        padding: 5px 50px;
-        left: 50%;
+    .summary h1 {
+        font-size: 24px !important;
+    }
+
+    .summary h3 {
+        font-size: 16px;
+    }
+
+    .navbar {
+        top: 65%;
+        left: 30%;
+        width: min-content;
+        background-color: #d4e4fe;
     }
 }
 
